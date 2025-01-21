@@ -6,6 +6,7 @@ public class q5 {
         int pensPerStudent = totalPens / students;
         int remainingPens = totalPens % students;
 
-        System.out.println("The Pen Per Student is " + pensPerStudent + " and the remaining pen not distributed is " + remainingPens);
+        System.out.println(
+                "Pen Per Student is " + pensPerStudent + " and remaining pen not distributed is " + remainingPens);
     }
 }
