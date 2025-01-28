@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class MatrixOperations {
+public class l3q13 {
 
     public static void main(String[] args) {
         int rows = 3;
