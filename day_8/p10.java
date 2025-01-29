@@ -3,7 +3,7 @@ public class p10 {
         String input = "Hello World";
         char charToRemove = 'l';
         String result = removeCharacter(input, charToRemove);
-        System.out.println("Modified String: " + result);
+        System.out.println("Modified String : " + result);
     }
 
     public static String removeCharacter(String str, char ch) {
