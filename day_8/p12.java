@@ -1,4 +1,4 @@
-public class ReplaceWord {
+public class p12 {
     public static String replaceWord(String sentence, String oldWord, String newWord) {
         if (sentence == null || oldWord == null || newWord == null) {
             return sentence;
