@@ -11,14 +11,14 @@ public class p4 {
 
     public static String removeDuplicates(String str) {
         Set<Character> charSet = new LinkedHashSet<>();
-        StringBuilder sb = new StringBuilder();
-
         for (char c : str.toCharArray()) {
-            if (charSet.add(c)) {
-                sb.append(c);
-            }
+            charSet.add(c);
         }
-
-        return sb.toString();
+        String result = "";
+        for (char c : charSet) {
+            result += c;
+        }
+        return result;
+ 
     }
 }
