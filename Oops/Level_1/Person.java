@@ -18,7 +18,7 @@ public class Person {
         this.age = other.age;
     }
 
-    // Getters and setters
+    // Getter and setter
     public String getName() {
         return name;
     }
