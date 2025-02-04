@@ -1,3 +1,4 @@
+
 public class BankAccount{
     private static String bankName = "Global bank";
     private static int totalAccounts = 0;
@@ -26,7 +27,7 @@ public class BankAccount{
     public static void main(String[] args) {
         BankAccount b1 = new BankAccount("Ayan", "123456789");
         BankAccount b2  = new BankAccount("SRK", "123412221");
-
+        System.out.println("Total number of accounts: " + BankAccount.getTotalAccounts());
         b1.display();;
         b2.display();
     }
