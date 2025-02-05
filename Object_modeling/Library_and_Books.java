@@ -1,4 +1,3 @@
-package Object_modeling;
 import java.util.ArrayList;
 
 class Book {
