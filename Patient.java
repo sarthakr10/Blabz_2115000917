@@ -18,6 +18,7 @@ public class Patient {
     public static int getTotalPatients() {
         return totalPatients;
     }
+
     public void displayDetails() {
         if (this instanceof Patient) {
             System.out.println("Patient ID: " + patientID);
@@ -29,6 +30,7 @@ public class Patient {
             System.out.println("The object is not an instance of Patient.");
         }
     }
+
     public static void main(String[] args) {
         Patient patient1 = new Patient(1, "John Doe", 30, "Flu");
         Patient patient2 = new Patient(2, "Jane Smith", 25, "Cold");
