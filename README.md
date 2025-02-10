@@ -1,66 +1,119 @@
-# Blabz_2115000917
-Day1 - 19/01/25
+# BridgeLabz_2115000375
 
-a. Learned to print message in java.
-b. Learned to add numbers in java by taking user input.
-c. Learned to convert Celsius into Fahrenheit in java by taking user input.
-d. Learned to find area of circle in java by taking user input.
-e. Learned to find volume of cylinder in java by taking user input.
------------------------------------------------------------------------------------------------------------------------------------------------------
-Day2 - 22/01/25
+## Day 1 - 19/01/25
+- Learned to print messages in Java.
+- Learned to add numbers in Java by taking user input.
+- Learned to convert Celsius into Fahrenheit in Java by taking user input.
+- Learned to find the area of a circle in Java by taking user input.
+- Learned to find the volume of a cylinder in Java by taking user input.
 
-a. Did basic programming
-b. Learned and practiced about user input
-c. Learnt how to code programs for area of triangle, conversions in km-miles, etc in java.
------------------------------------------------------------------------------------------------------------------------------------------------------
-Day3 - 23/01/25
+---
 
-a. Learnt about conditionals and solved question related to it.\ b. Learnt about loops - while, do-while and for loop. Also solved question.
-c. Solved queations related to operators and learnt using logical operators in loops and if-else.
-d. Solved queations on nested loops, nested if-else.
-e. Learnt about switch-case and also solved a question on it.
-------------------------------------------------------------------------------------------------------------------------------------------------------
-Day4 - 25/01/25
+## Day 2 - 22/01/25
+- Did basic programming.
+- Learned and practiced user input.
+- Learned how to code programs for the area of a triangle, conversions (km to miles), etc., in Java.
 
-a. Learnt about arrays and it's different datatypes.
-b. learnt about properties and inbuilt-methods of array and practiced questions about it.
-c. Learnt about 2D arrays and its properties and used it to solve problems.
-----------------------------------------------------------------------------------------------------------------------------------------------------
-Day5 - 28/01/25
+---
 
-a. Learnt about methods in java.
-b. Learnt about user-defined methods and in-built methods
-c. Used in-built methods like Math.pow, Math.random, Math.sqrt
-d. Learnt recursion and used it in the code.
-e. Did complex and lengthy codes like matrix operation.
---------------------------------------------------------------------------------------------------------------------------------------------------------
-Day6 - 29/01/25
+## Day 3 - 23/01/25
+- Learned about conditionals and solved related questions.
+- Learned about loops - while, do-while, and for loop. Also solved related questions.
+- Solved questions related to operators and learned to use logical operators in loops and if-else.
+- Solved questions on nested loops and nested if-else.
+- Learned about switch-case and solved a question on it.
 
-a. Learnt about Strings and practiced some problems.
-b. Learnt about in-built functions of strings such as length(), charAt(), indexOf(), etc.
-c. Solved problems on strings with and without in-built functions of strings.
--------------------------------------------------------------------------------------------------------------------------------------------------------
-Day7 - 31/01/25
+---
 
-a. Learnt about basic OOPs concepts like class, objects, encapsulation, polymorphism, etc.
-b. Solved Questions on OOPs problems
-c. Explored how Oops can be used in real development.# Blabz_2115000917
-------------------------------------------------------------------------------------------------------------------------------------------------------
-Day8 - 02/02/25
+## Day 4 - 25/01/25
+- Learned about arrays and their different data types.
+- Learned about properties and inbuilt methods of arrays and practiced related questions.
+- Learned about 2D arrays, their properties, and used them to solve problems.
 
-a. Learnt difference between class variables and instance variables.
-b. Solved questions on class variables and instance variables.
-c. Learnt about "extends" keyword for inheritance and solved questions on it.
-d. Learnt about classes and subclasses while solving questions on inheritance.
--------------------------------------------------------------------------------------------------------------------------------------------------------
-Day9 - 04/02/25
+---
 
-Today, I worked on multiple Java programs that reinforced key Object-Oriented Programming (OOP)
- concepts such as static variables, final variables, this keyword, and instance
-of checks through real-world applications.
- Below is a summary of the programs I implemented:
-a. Implemented a Student Management System using OOP concepts such as static variables, final variables, and instanceof checks.
-b. Implemented a Vehicle Registration System with static methods, final registration numbers, and instanceof checks before displaying vehicle details.
-c. Implemented a Hospital Management System to manage patient data, using static variables for hospital names, final patient IDs, and instanceof checks before displaying patient information.
-d. Practiced and reinforced concepts like static methods, final variables, this keyword, and instanceof checks through real-world applications.
-------------------------------------------------------------------------------------------------------------------------------------------------------
+## Day 5 - 28/01/25
+- Learned about methods in Java.
+- Learned about user-defined methods and built-in methods.
+- Used built-in methods like `Math.pow`, `Math.random`, `Math.sqrt`.
+- Learned recursion and implemented it in the code.
+- Solved complex and lengthy problems like matrix operations.
+
+---
+
+## Day 6 - 29/01/25
+- Learned about Strings and practiced problems.
+- Learned about built-in functions of strings such as `length()`, `charAt()`, `indexOf()`, etc.
+- Solved problems on strings with and without built-in functions.
+
+---
+
+## Day 7 - 31/01/25
+- Learned basic OOP concepts like classes, objects, encapsulation, polymorphism, etc.
+- Solved questions on OOP concepts.
+- Explored how OOP can be used in real-world development.
+
+---
+
+## Day 8 - 02/02/25
+- Learned the difference between class variables and instance variables.
+- Solved questions on class variables and instance variables.
+- Learned about the `extends` keyword for inheritance and solved related questions.
+- Learned about classes and subclasses while working on inheritance problems.
+
+---
+
+## Day 9 - 04/02/25
+Today, I worked on multiple Java programs that reinforced key Object-Oriented Programming (OOP) concepts such as static variables, final variables, `this` keyword, and `instanceof` checks through real-world applications.
+
+### Programs Implemented:
+- **Student Management System**: Used static variables, final variables, and `instanceof` checks.
+- **Vehicle Registration System**: Implemented static methods, final registration numbers, and `instanceof` checks before displaying vehicle details.
+- **Hospital Management System**: Managed patient data using static variables for hospital names, final patient IDs, and `instanceof` checks before displaying patient information.
+- Practiced and reinforced concepts like static methods, final variables, `this` keyword, and `instanceof` checks.
+
+---
+
+## Day 10 - 05/02/25
+- Learned about Class Diagrams, Object Diagrams, and Sequence Diagrams.
+- Explored how different UML diagrams represent object-oriented concepts.
+- Practiced designing class diagrams for real-world applications.
+- Implemented object and sequence diagrams to represent interactions between objects.
+- Understood the importance of UML diagrams in software design and development.
+
+---
+
+## Day 11 - 07/02/25
+
+### Advanced Java OOP & Hybrid Inheritance
+Today, I worked on multiple Java programs that reinforced Inheritance, Polymorphism, and Hybrid Inheritance through real-world applications:
+
+- **Animal Hierarchy**
+  - Implemented an `Animal` superclass with subclasses: `Dog`, `Cat`, and `Bird`.
+  - Overrode `makeSound()` in each subclass to demonstrate method overriding.
+  - Used polymorphism to call `makeSound()` dynamically.
+
+- **Employee Management System**
+  - Implemented `Employee` as a superclass with subclasses: `Manager`, `Developer`, and `Intern`.
+  - Introduced attributes like `teamSize` (for `Manager`) and `programmingLanguage` (for `Developer`).
+  - Overrode `displayDetails()` to show unique employee information.
+
+- **Vehicle Management System (Hybrid Inheritance)**
+  - Created a `Vehicle` superclass with `maxSpeed` and `fuelType`.
+  - Implemented `ElectricVehicle` and `PetrolVehicle` as subclasses.
+  - Created an interface `Refuelable`, implemented by `PetrolVehicle`.
+  - Demonstrated hybrid inheritance by making `PetrolVehicle` extend `Vehicle` while implementing `Refuelable`.
+
+- **Library Management System**
+  - Designed a `Book` superclass and an `Author` subclass.
+  - Overrode `displayInfo()` to print book and author details.
+
+- **Smart Home System**
+  - Created a `Device` superclass with `deviceId` and `status`.
+  - Implemented `Thermostat` as a subclass with `temperatureSetting`.
+  - Overrode `displayStatus()` to display unique device information.
+
+- **Restaurant System (Hybrid Inheritance)**
+  - Created a `Person` superclass.
+  - Defined a `Worker` interface with a `performDuties()` method.
+  - Implemented `Chef` and `Waiter` subclasses that inherit from `Person` and implement `Worker`, showcasing multiple inheritance through interfaces.
