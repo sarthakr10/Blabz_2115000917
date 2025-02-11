@@ -64,56 +64,54 @@
 ---
 
 ## Day 9 - 04/02/25
-Today, I worked on multiple Java programs that reinforced key Object-Oriented Programming (OOP) concepts such as static variables, final variables, `this` keyword, and `instanceof` checks through real-world applications.
-
-### Programs Implemented:
-- **Student Management System**: Used static variables, final variables, and `instanceof` checks.
-- **Vehicle Registration System**: Implemented static methods, final registration numbers, and `instanceof` checks before displaying vehicle details.
-- **Hospital Management System**: Managed patient data using static variables for hospital names, final patient IDs, and `instanceof` checks before displaying patient information.
-- Practiced and reinforced concepts like static methods, final variables, `this` keyword, and `instanceof` checks.
-
+- Worked on multiple Java programs reinforcing key OOP concepts: static variables, final variables, `this` keyword, and `instanceof` checks.
+- Implemented:
+  - **Student Management System**
+  - **Vehicle Registration System**
+  - **Hospital Management System**
+  
 ---
 
 ## Day 10 - 05/02/25
 - Learned about Class Diagrams, Object Diagrams, and Sequence Diagrams.
-- Explored how different UML diagrams represent object-oriented concepts.
+- Explored how UML diagrams represent object-oriented concepts.
 - Practiced designing class diagrams for real-world applications.
 - Implemented object and sequence diagrams to represent interactions between objects.
-- Understood the importance of UML diagrams in software design and development.
 
 ---
 
 ## Day 11 - 07/02/25
+- Advanced Java OOP & Hybrid Inheritance.
+- Implemented:
+  - **Animal Hierarchy**
+  - **Employee Management System**
+  - **Vehicle Management System (Hybrid Inheritance)**
+  - **Library Management System**
+  - **Smart Home System**
+  - **Restaurant System (Hybrid Inheritance)**
 
-### Advanced Java OOP & Hybrid Inheritance
-Today, I worked on multiple Java programs that reinforced Inheritance, Polymorphism, and Hybrid Inheritance through real-world applications:
+---
 
-- **Animal Hierarchy**
-  - Implemented an `Animal` superclass with subclasses: `Dog`, `Cat`, and `Bird`.
-  - Overrode `makeSound()` in each subclass to demonstrate method overriding.
-  - Used polymorphism to call `makeSound()` dynamically.
+## Day 12 - 10/02/25
+- Further explored advanced OOP concepts: inheritance, polymorphism, and hybrid inheritance.
+- Implemented:
+  - **Animal Hierarchy**
+  - **Employee Management System**
+  - **Vehicle Management System (Hybrid Inheritance)**
+  - **Library Management System**
+  - **Smart Home System**
+  - **Restaurant System (Hybrid Inheritance)**
 
-- **Employee Management System**
-  - Implemented `Employee` as a superclass with subclasses: `Manager`, `Developer`, and `Intern`.
-  - Introduced attributes like `teamSize` (for `Manager`) and `programmingLanguage` (for `Developer`).
-  - Overrode `displayDetails()` to show unique employee information.
+---
 
-- **Vehicle Management System (Hybrid Inheritance)**
-  - Created a `Vehicle` superclass with `maxSpeed` and `fuelType`.
-  - Implemented `ElectricVehicle` and `PetrolVehicle` as subclasses.
-  - Created an interface `Refuelable`, implemented by `PetrolVehicle`.
-  - Demonstrated hybrid inheritance by making `PetrolVehicle` extend `Vehicle` while implementing `Refuelable`.
-
-- **Library Management System**
-  - Designed a `Book` superclass and an `Author` subclass.
-  - Overrode `displayInfo()` to print book and author details.
-
-- **Smart Home System**
-  - Created a `Device` superclass with `deviceId` and `status`.
-  - Implemented `Thermostat` as a subclass with `temperatureSetting`.
-  - Overrode `displayStatus()` to display unique device information.
-
-- **Restaurant System (Hybrid Inheritance)**
-  - Created a `Person` superclass.
-  - Defined a `Worker` interface with a `performDuties()` method.
-  - Implemented `Chef` and `Waiter` subclasses that inherit from `Person` and implement `Worker`, showcasing multiple inheritance through interfaces.
+## Day 13 - 11/02/25
+- Implemented Data Structure-Based Management Systems using linked lists (Singly, Doubly, and Circular) in Java:
+  - **Singly Linked List: Student Records Management**
+  - **Doubly Linked List: Movie Management System**
+  - **Circular Linked List: Task Scheduler**
+  - **Singly Linked List: Inventory Management System**
+  - **Doubly Linked List: Library Management System**
+  - **Circular Linked List: Round Robin CPU Scheduling**
+  - **Singly Linked List: Social Media Friend Connections**
+  - **Doubly Linked List: Undo/Redo in Text Editor**
+  - **Circular Linked List: Online Ticket Reservation System**
