@@ -1,59 +1,64 @@
 class InventoryItem {
     String itemName;
     int itemID;
-    int quantity;
-    double price;
+    int Quantity;
+    int Price;
     InventoryItem next;
 
-    public InventoryItem(String itemName, int itemID, int quantity, double price) {
+    public InventoryItem(String itemName, int itemID, int Quantity, int Price) {
         this.itemName = itemName;
+        this.Price = Price;
+        this.Quantity = Quantity;
         this.itemID = itemID;
-        this.quantity = quantity;
-        this.price = price;
-        this.next = null;
     }
 }
 
-class InventoryManagement {
+public class InventoryManagement {
     private InventoryItem head;
 
-    public void addItemAtBeginning(String itemName, int itemID, int quantity, double price) {
-        InventoryItem newItem = new InventoryItem(itemName, itemID, quantity, price);
+    // addItemAtBeginning
+    public void addAtBeginning(String itemName, int itemID, int Price, int Quantity) {
+        InventoryItem newItem = new InventoryItem(itemName, itemID, Quantity, Price);
         newItem.next = head;
         head = newItem;
     }
 
-    public void addItemAtEnd(String itemName, int itemID, int quantity, double price) {
-        InventoryItem newItem = new InventoryItem(itemName, itemID, quantity, price);
+    // addItemAtEnd
+    public void addAtLast(String itemName, int itemID, int Price, int Quantity) {
+        InventoryItem newItem = new InventoryItem(itemName, itemID, Quantity, Price);
         if (head == null) {
             head = newItem;
             return;
+        } else {
+            InventoryItem temp = head;
+            while (temp.next != null) {
+                temp = temp.next;
+            }
+            temp.next = newItem;
         }
-        InventoryItem temp = head;
-        while (temp.next != null) {
-            temp = temp.next;
-        }
-        temp.next = newItem;
     }
 
-    public void addItemAtPosition(String itemName, int itemID, int quantity, double price, int position) {
-        InventoryItem newItem = new InventoryItem(itemName, itemID, quantity, price);
+    // addItemAtPosition
+    public void addItemAtPosition(String itemName, int itemID, int Price, int Quantity, int position) {
+        InventoryItem newItem = new InventoryItem(itemName, itemID, Quantity, Price);
         if (position == 0) {
             newItem.next = head;
             head = newItem;
-            return;
         }
         InventoryItem temp = head;
-        for (int i = 0; temp != null && i < position - 1; i++) {
+        for (int i = 0; i < position - 1 && temp.next != null; i++) {
             temp = temp.next;
         }
-        if (temp == null) return;
+        if (temp == null)
+            return;
         newItem.next = temp.next;
         temp.next = newItem;
     }
 
+    // removeItem
     public void removeItem(int itemID) {
-        if (head == null) return;
+        if (head == null)
+            return;
         if (head.itemID == itemID) {
             head = head.next;
             return;
@@ -62,62 +67,76 @@ class InventoryManagement {
         while (temp.next != null && temp.next.itemID != itemID) {
             temp = temp.next;
         }
-        if (temp.next == null) return;
+        if (temp.next == null)
+            return;
         temp.next = temp.next.next;
+
     }
 
+    // updateQuantity
     public void updateQuantity(int itemID, int newQuantity) {
         InventoryItem temp = head;
         while (temp != null) {
             if (temp.itemID == itemID) {
-                temp.quantity = newQuantity;
-                return;
+                temp.Quantity = newQuantity;
             }
             temp = temp.next;
         }
     }
 
+    // searchItemByID
     public InventoryItem searchItemByID(int itemID) {
         InventoryItem temp = head;
         while (temp != null) {
-            if (temp.itemID == itemID) return temp;
+            if (temp.itemID == itemID) {
+                return temp;
+            }
             temp = temp.next;
         }
         return null;
     }
 
+    // searchItemByName
     public InventoryItem searchItemByName(String itemName) {
         InventoryItem temp = head;
         while (temp != null) {
-            if (temp.itemName.equalsIgnoreCase(itemName)) return temp;
+            if (temp.itemName.equalsIgnoreCase(itemName)) {
+                return temp;
+            }
             temp = temp.next;
         }
         return null;
     }
 
-    public double calculateTotalValue() {
-        double totalValue = 0;
+    // calculateTotalValue
+    public int calculateTotalValue() {
+        int total = 0;
         InventoryItem temp = head;
         while (temp != null) {
-            totalValue += temp.price * temp.quantity;
+            total += temp.Price * temp.Quantity;
             temp = temp.next;
         }
-        return totalValue;
+        return total;
     }
 
-    private InventoryItem mergeSort(InventoryItem head, boolean sortByName) {
-        if (head == null || head.next == null) return head;
+    // mergeSort
+    public InventoryItem mergeSort(InventoryItem head, boolean sortByName) {
+        if (head == null || head.next == null)
+            return head;
         InventoryItem middle = getMiddle(head);
-        InventoryItem nextOfMiddle = middle.next;
+        InventoryItem nextofMiddle = middle.next;
         middle.next = null;
         InventoryItem left = mergeSort(head, sortByName);
-        InventoryItem right = mergeSort(nextOfMiddle, sortByName);
+        InventoryItem right = mergeSort(nextofMiddle, sortByName);
         return merge(left, right, sortByName);
     }
 
+    // merge
     private InventoryItem merge(InventoryItem left, InventoryItem right, boolean sortByName) {
-        if (left == null) return right;
-        if (right == null) return left;
+        if (left == null)
+            return right;
+        if (right == null)
+            return left;
         if (sortByName) {
             if (left.itemName.compareToIgnoreCase(right.itemName) < 0) {
                 left.next = merge(left.next, right, sortByName);
@@ -127,7 +146,7 @@ class InventoryManagement {
                 return right;
             }
         } else {
-            if (left.price < right.price) {
+            if (left.Price < right.Price) {
                 left.next = merge(left.next, right, sortByName);
                 return left;
             } else {
@@ -136,9 +155,11 @@ class InventoryManagement {
             }
         }
     }
+    // getMiddle
 
     private InventoryItem getMiddle(InventoryItem head) {
-        if (head == null) return null;
+        if (head == null)
+            return null;
         InventoryItem slow = head, fast = head;
         while (fast.next != null && fast.next.next != null) {
             slow = slow.next;
@@ -147,32 +168,39 @@ class InventoryManagement {
         return slow;
     }
 
+    // sortInventory
     public void sortInventory(boolean sortByName) {
         head = mergeSort(head, sortByName);
     }
 
+    // displayInventory
     public void displayInventory() {
         InventoryItem temp = head;
         while (temp != null) {
-            System.out.println("Item ID: " + temp.itemID + ", Name: " + temp.itemName + ", Quantity: " + temp.quantity + ", Price: " + temp.price);
+            System.out.print(" ID :" + temp.itemID);
+            System.out.print(" NAME : " + temp.itemName);
+            System.out.print(" PRICE : " + temp.Price);
+            System.out.print(" Quantity : " + temp.Quantity);
+            System.out.println();
             temp = temp.next;
         }
     }
 
     public static void main(String[] args) {
-        InventoryManagement inventory = new InventoryManagement();
-        inventory.addItemAtEnd("Laptop", 101, 5, 50000);
-        inventory.addItemAtEnd("Mouse", 102, 15, 500);
-        inventory.addItemAtEnd("Keyboard", 103, 10, 1500);
+        InventoryManagement Inventory = new InventoryManagement();
+        Inventory.addAtBeginning("Laptop", 101, 5, 50000);
+        Inventory.addAtBeginning("Mouse", 102, 15, 500);
+        Inventory.addAtLast("Keyboard", 103, 10, 1500);
 
-        System.out.println("Inventory before sorting:");
-        inventory.displayInventory();
+        System.out.println("List before sorting");
+        Inventory.displayInventory();
+        System.out.println("--------------------------");
+        Inventory.sortInventory(true);
+        Inventory.displayInventory();
+        System.out.println("--------------------------");
+        Inventory.sortInventory(false);
+        Inventory.displayInventory();
+        System.out.println("\nTotal Inventory Value: " + Inventory.calculateTotalValue());
 
-        System.out.println("\nSorting inventory by Name:");
-        inventory.sortInventory(true);
-        inventory.displayInventory();
-
-        System.out.println("\nTotal Inventory Value: " + inventory.calculateTotalValue());
     }
 }
-
