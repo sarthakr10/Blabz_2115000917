@@ -1,0 +1,5 @@
+Artificial intelligence (AI) refers to the simulation of human intelligence
+in machines that are programmed to think and learn like humans.
+exit
+These intelligent systems are capable of performing tasks such
+as speech recognition, decision-making, and language translation.
