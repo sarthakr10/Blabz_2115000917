@@ -1,4 +1,4 @@
-# BridgeLabz_2115000375
+# BridgeLabz_2115000917
 
 ## Day 1 - 19/01/25
 - Learned to print messages in Java.
@@ -69,7 +69,7 @@
   - **Student Management System**
   - **Vehicle Registration System**
   - **Hospital Management System**
-  
+
 ---
 
 ## Day 10 - 05/02/25
@@ -115,3 +115,44 @@
   - **Singly Linked List: Social Media Friend Connections**
   - **Doubly Linked List: Undo/Redo in Text Editor**
   - **Circular Linked List: Online Ticket Reservation System**
+
+---
+
+## Day 14 - 13/02/25
+- Learned about Stack and Queues and solved questions like implementing Queue using stack, sorting a Stack Using Recursion, etc.
+- Learned about HashMap and Hash Functions and solved questions like Target sum, Two sum, etc.
+- Learned about Java inbuilt Data structures stack, queue, hashmap in collection framework.
+
+---
+
+## Day 15 - 14/02/25
+- Learned about Bubble Sort and implemented it to sort student marks.
+- Learned about Insertion Sort and used it to sort employee IDs.
+- Practiced Merge Sort by sorting an array of book prices.
+- Implemented Quick Sort for sorting product prices in an e-commerce application.
+- Explored Selection Sort and used it to sort exam scores.
+- Studied Heap Sort and applied it to sort job applicants by salary demands.
+- Implemented Counting Sort to efficiently sort student ages.
+- Analyzed the time and space complexities of these sorting algorithms.
+- Explored real-world applications of sorting techniques in different domains.
+
+---
+
+## Day 16 - 15/02/25
+- Learnt all the basics of sorting and searching algorithms, including Merge sort, Insertion sort, Selection sort, Bubble sort, Radix sort, etc.
+- Implemented searching algorithms like Linear Search and Binary Search.
+- Solved problems related to sorting and searching.
+- Learned about Buffered Reader, InputStream, as well as FileReader, and solved multiple questions related to it.
+
+---
+
+## Day 17 - 17/02/25
+- Explored and solved problems related to algorithmic complexity:
+  - **Search Algorithms**: Compared Linear Search (O(N)) vs Binary Search (O(log N)).
+  - **Sorting Algorithms**: Analyzed Bubble Sort (O(N²)), Merge Sort (O(N log N)), and Quick Sort (O(N log N)).
+  - **String Concatenation**: Tested performance of String (O(N²)), StringBuilder (O(N)), and StringBuffer (O(N)).
+  - **File Reading Efficiency**: Compared FileReader (O(N)) vs InputStreamReader (O(N)).
+  - **Fibonacci Computation**: Recursive (O(2ⁿ)) vs Iterative (O(N)) approach.
+  - **Data Structure Search**: Benchmarked Array (O(N)), HashSet (O(1)), and TreeSet (O(log N)).
+- Key takeaway: Choosing the right algorithm and data structure significantly impacts performance!
+
