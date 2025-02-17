@@ -1,0 +1,28 @@
+Explanation:
+
+    String (O(N²))
+        Strings are immutable, so each concatenation creates a new object.
+        This results in poor performance when handling large datasets.
+
+    StringBuilder (O(N))
+        Uses a mutable character sequence.
+        Fast and efficient for single-threaded applications.
+
+    StringBuffer (O(N))
+        Similar to StringBuilder, but thread-safe due to synchronized methods.
+        Slightly slower than StringBuilder in single-threaded scenarios.
+
+        Sorting Algorithms (O(N log N) vs O(N²))
+            Bubble Sort (O(N²))
+                Repeated swapping of adjacent elements.
+                Inefficient for large datasets due to quadratic time complexity.
+
+            Merge Sort (O(N log N))
+                Divide and conquer approach.
+                Stable sort with consistent performance.
+
+            Quick Sort (O(N log N))
+                Partition-based approach.
+                Generally faster but can degrade to O(N²) in the worst case.
+
+                
