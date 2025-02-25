@@ -15,7 +15,7 @@ public class Filter {
                 int marks = Integer.parseInt(student[1]);
                 
                 if (marks > 80) {
-                    System.out.println("Name: " + name + ", Marks: " + marks);
+                    System.out.println("Name : " + name + ", Marks: " + marks);
                 }
             }
         } catch (IOException e) {

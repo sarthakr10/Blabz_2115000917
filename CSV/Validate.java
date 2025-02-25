@@ -19,7 +19,7 @@ public class Validate {
                 String phoneNumber = columns[1];
 
                 if (!isValidEmail(email)) {
-                    System.out.println("Invalid email: " + email + " in row: " + line);
+                    System.out.println("Invalid email : " + email + " in row: " + line);
                 }
 
                 if (!isValidPhoneNumber(phoneNumber)) {

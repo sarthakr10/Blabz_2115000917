@@ -11,7 +11,7 @@ public class ConvertJson {
     public static void main(String[] args) {
         try {
             // Convert JSON to CSV
-            jsonToCsv("/path/to/students.json", "/path/to/students.csv");
+            jsonToCsv("/path/to/students.json",  "/path/to/students.csv");
 
             // Convert CSV to JSON
             csvToJson("/path/to/students.csv", "/path/to/students_output.json");

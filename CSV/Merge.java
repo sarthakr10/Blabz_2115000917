@@ -31,7 +31,7 @@ public class Merge {
                 String[] values = line.split(",");
                 students2.put(values[0], new String[]{values[1], values[2]});
             }
-        } catch (IOException e) {
+        } catch (IOException  e) {
             e.printStackTrace();
         }
 

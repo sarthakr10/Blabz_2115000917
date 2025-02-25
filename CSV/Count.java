@@ -13,7 +13,7 @@ public class Count {
             br.readLine();
             
             while ((line = br.readLine()) != null) {
-                rowCount++;
+                rowCount++ ;
             }
         } catch (IOException e) {
             e.printStackTrace();

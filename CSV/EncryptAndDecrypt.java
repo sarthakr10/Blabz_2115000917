@@ -10,7 +10,7 @@ public class EncryptAndDecrypt {
     private static final String ALGORITHM = "AES";
     private static final byte[] keyValue = "1234567890123456".getBytes();
     public static void main(String[] args) throws Exception {
-        String[] data = {"John Doe", "john.doe@example.com", "50000"};
+        String[] data = {"John  Doe", "john.doe@example.com", "50000"};
         String filePath = "/Users/Sarthak/labz/CSV/data.csv";
 
         writeEncryptedCSV(data, filePath);

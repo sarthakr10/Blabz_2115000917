@@ -30,7 +30,7 @@ public class Duplicate {
             e.printStackTrace();
         }
 
-        System.out.println("Duplicate Records:");
+        System.out.println("Duplicate  Records:");
         for (String duplicate : duplicates) {
             System.out.println(duplicate);
         }

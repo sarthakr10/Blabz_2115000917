@@ -32,7 +32,7 @@ public class Sort {
             }
         });
 
-        System.out.println("Top 5 highest-paid employees:");
+        System.out.println("Top 5 highest-paid  employees:");
         for (int i = 0; i < Math.min(5, employees.size()); i++) {
             System.out.println(employees.get(i));
         }

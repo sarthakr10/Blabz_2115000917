@@ -17,7 +17,7 @@ public class WriteData {
             writer.append("4,Brown,HR,60000\n");
             writer.append("5,Davis,Finance,80000\n");
 
-            System.out.println("CSV file created successfully!");
+            System.out.println("CSV file created  successfully!");
 
         } catch (IOException e) {
             e.printStackTrace();

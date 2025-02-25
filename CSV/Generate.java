@@ -8,7 +8,7 @@ import java.sql.Statement;
 public class Generate {
     public static void main(String[] args) {
         String jdbcURL = "jdbc:mysql://localhost:3306/your_database";
-        String username = "Sarthak";
+        String username = "Sarthak ";
         String password = "Samsar@123";
 
         String csvFile = "/Users/Sarthak/labz/CSV/employee_report.csv";

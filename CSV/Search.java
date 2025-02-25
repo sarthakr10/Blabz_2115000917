@@ -14,7 +14,7 @@ public class Search {
                 String[] employee = line.split(csvSplitBy);
                 if (employee[0].equalsIgnoreCase(searchName)) {
                     System.out.println("Department: " + employee[1]);
-                    System.out.println("Salary: " + employee[2]);
+                    System.out.println("Salary:  " + employee[2]);
                     return;
                 }
             }

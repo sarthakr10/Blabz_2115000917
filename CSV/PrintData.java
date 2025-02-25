@@ -11,7 +11,7 @@ public class PrintData {
         try (BufferedReader br = new BufferedReader(new FileReader(csvFile))) {
             while ((line = br.readLine()) != null) {
                 String[] student = line.split(csvSplitBy);
-                System.out.println("ID: " + student[0] + ", Name: " + student[1] + ", Age: " + student[2] + ", Marks: " + student[3]);
+                System.out.println("ID : " + student[0] + ", Name: " + student[1] + ", Age: " + student[2] + ", Marks: " + student[3]);
             }
         } catch (IOException e) {
             e.printStackTrace();
