@@ -1,0 +1,10 @@
+{
+  "posts": [
+    { "id": 1, "title": "Hello World", "author": "Sarthak" },
+    { "id": 2, "title": "Learning JSON Server", "author": "GFG" }
+  ],
+  "comments": [
+    { "id": 1, "postId": 1, "body": "Great post!" }
+  ]
+}
+
